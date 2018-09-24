@@ -1,0 +1,27 @@
+{
+  "name": "blockcluster assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehabisht0120/blockcluster.git"
+  },
+  "author": "Neha Bisht",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehabisht0120/blockcluster/issues"
+  },
+  "homepage": "https://github.com/nehabisht0120/blockcluster#readme"
+}
