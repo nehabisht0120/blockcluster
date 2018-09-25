@@ -36,6 +36,7 @@ class Dashboard extends Component {
     // Update coin with recent data from CryptoCompare websocket API.
 
     message = message.split("~");
+    console.log(message);
     let coins = Object.assign({}, this.state.coins);
     let d = [
       "SubscriptionId",
@@ -60,7 +61,7 @@ class Dashboard extends Component {
 
     let priceChangeMap = this.setPriceChangeFlags(obj.Flag);
 
-    if (coins[obj.FromCurrency])
+    if (coins[obj.FromCurrency] && (obj.Flag === "1" || obj.Flag === "2"))
       coins[obj.FromCurrency] = { ...obj, ...priceChangeMap };
 
     this.setState({ coins: coins });
@@ -74,7 +75,7 @@ class Dashboard extends Component {
         coins[obj.FromCurrency].goDown = false;
         this.setState({ coins: coins });
       }
-    }, 1000);
+    }, 500);
   };
 
   render() {
