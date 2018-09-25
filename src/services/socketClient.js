@@ -19,7 +19,6 @@ export const subscribeCryptoStream = (coins,callback) => {
     cryptoIO.emit("SubAdd", { "subs": subs });
 
     cryptoIO.on("m", (message) => {
-        //console.log("updating ....",message)
         callback(message);
     });
   };

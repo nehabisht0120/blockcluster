@@ -1,10 +1,10 @@
 //@ts-check
 
 import React, { Component } from "react";
-import { fetchCryptoCurrencyData } from "../../apis/CryptoCurrency";
+import { fetchCryptoCurrencyData } from "../../apis/cryptoCurrencyAPI";
 import { subscribeCryptoStream } from "../../services/socketClient";
 import { DashboardWrapper } from "./styled";
-import CryptoWidget from "./components/cryptoWidget";
+import CryptoWidget from "./components/CryptoWidget";
 
 class Dashboard extends Component {
   state = {
